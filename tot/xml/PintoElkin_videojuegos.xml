@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videojuegos SYSTEM "PintoElkin_videojuegos.dtd">
+
+<!-- En la practica no ponia que fuera obligatorio poner idRefPrecuela, asi que no puse ninguno, aunque en el DTD aun esta para permitir ponerlo -->
+
+<videojuegos autor="David_Pinto">
+    <videojuego idvideojuego="B01">
+        <nombre>Dark souls III</nombre>
+        <genero subgenero="accion">Souls Like</genero>
+        <infogeneral>
+            <foto>https://cdn.cloudflare.steamstatic.com/steam/apps/374320/header.jpg?t=1682651227</foto>
+            <enlace>https://store.steampowered.com/app/374320/DARK_SOULS_III/</enlace>
+            <idiomas>Esplañol,Ingles,Portugues</idiomas>
+            <desarrollador>FromSoftware Inc</desarrollador>
+            <distribuidor>Bandai Namco</distribuidor>
+            <descripcion>Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The Darkness!</descripcion>
+        </infogeneral>
+        <plataformas>
+            <plataforma precio="59.99" fecha_salida="
+            11 Apr, 2016">PC</plataforma>
+            <plataforma precio="59.99" fecha_salida="
+            11 Apr, 2016">PS4</plataforma>
+            <plataforma precio="59.99" fecha_salida="
+            11 Apr, 2016">xbox</plataforma>
+        </plataformas>
+        <modos_juego>
+            <modo_juego>Single Player</modo_juego>
+            <modo_juego>Multi Player</modo_juego>
+        </modos_juego>
+    </videojuego>
+    <videojuego idvideojuego="B02">
+        <nombre>Counter-Strike 2</nombre>
+        <genero subgenero="accion">FPS</genero>
+        <infogeneral>
+            <foto>https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg?t=1695944686</foto>
+            <enlace>https://store.steampowered.com/app/730/CounterStrike_2/</enlace>
+            <idiomas>Esplañol,Ingles,Portugues</idiomas>
+            <desarrollador>valve</desarrollador>
+            <distribuidor>valve</distribuidor>
+            <descripcion>For over two decades, Counter-Strike has offered an elite competitive experience, one shaped by millions of players from across the globe. And now the next chapter in the CS story is about to begin. This is Counter-Strike 2. </descripcion>
+        </infogeneral>
+        <plataformas>
+            <plataforma precio="FREE" fecha_salida="21 Aug, 2012">PC</plataforma>
+        </plataformas>
+        <modos_juego>
+            <modo_juego>Casual</modo_juego>
+            <modo_juego>Ranked</modo_juego>
+        </modos_juego>
+    </videojuego>
+</videojuegos>

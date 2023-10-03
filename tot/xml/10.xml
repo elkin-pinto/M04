@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<inversion xmlns:dinero="www.financias.net" xmlns="www.paises.com"> 
+	<pais nombre="Francia">
+		<capital>
+			Paris
+		</capital>
+		<dinero:capital>
+			1200M€
+		</dinero:capital>
+	</pais>
+</inversion>

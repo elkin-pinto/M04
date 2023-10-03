@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locales>
+    <estableciment>
+        <nom>El Bar Pasqual</nom>
+        <Caracteristica>Bar de tapes</Caracteristica>
+        <direccio>Avenida Diagonal 232</direccio>
+        <propietari>Joan Alcover</propietari>
+    </estableciment>
+
+    <estableciment>
+        <nom>El restaurante Meravellas</nom>
+        <Caracteristica>Restaurant de menú</Caracteristica>
+        <direccio>Meridiana 111</direccio>
+        <propietari>Maria Garcia</propietari>
+    </estableciment>
+
+    <estableciment>
+        <nom>El restaurante Racó de l'Avia</nom>
+        <Caracteristica>Restaurant de menú</Caracteristica>
+        <direccio>Av. Roma 221</direccio>
+        <propietari>Alba Puig</propietari>
+    </estableciment>
+</locales>

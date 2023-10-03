@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE federacio [
+<!ELEMENT federacio (equips)+>
+
+<!ELEMENT equips (jugadors+,nom_equip,any_fundacio,fundador,estadi,palmares)>
+<!ATTLIST equips identificador ID #REQUIRED>
+<!ATTLIST equips presupost CDATA "500.000">
+<!ELEMENT nom_equip (#PCDATA)>
+<!ELEMENT any_fundacio (#PCDATA)>
+<!ELEMENT fundador (#PCDATA)>
+<!ELEMENT estadi (#PCDATA)>
+
+<!ELEMENT jugadors (nom,dorsal,edat,equips_anteriors*)>
+<!ATTLIST jugadors posicio (porter | defensa | migcampista | davanter) #REQUIRED comunitaris (extracomunitari | comunitari) #REQUIRED >
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT dorsal (#PCDATA)>
+<!ELEMENT edat (#PCDATA)>
+<!ELEMENT equips_anteriors (#PCDATA)>
+
+
+<!ELEMENT palmares (lligues*,copes*)>
+<!ATTLIST palmares clligues  CDATA #REQUIRED ccopes CDATA #REQUIRED>
+<!ELEMENT lligues (#PCDATA)>
+<!ELEMENT copes (#PCDATA)>
+<!ATTLIST lligues any CDATA #REQUIRED>
+<!ATTLIST copes any CDATA #REQUIRED>
+]>

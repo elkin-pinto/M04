@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cartellera [
+<!ELEMENT cartellera (pelicula)+>
+<!ELEMENT pelicula (titol,titol_original?,nacionalitat,genere,classificacio,sinopsi,director,repartiment,web_link,cartell)>
+<!ATTLIST pelicula codo ID #REQUIRED>
+<!ATTLIST pelicula durada CDATA #REQUIRED>
+<!ATTLIST pelicula any CDATA "2022">
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT titol_original (#PCDATA)>
+<!ELEMENT nacionalitat (#PCDATA)>
+<!ELEMENT genere (#PCDATA)>
+<!ELEMENT calssificacio (sin_classificar)?>
+<!ATTLIST classificacio edat (TP|8|12|16|18) #IMPLIED>
+<!ELEMENT sin_classificar EMPTY>
+<!ELEMENT sinopsi (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT repartiment (actor)*>
+<!ELEMENT actor EMPTY>
+<!ATTLIST actor nom CDATA #REQUIRED cognom CDATA #REQUIRED>
+<!ELEMENT web_link EMPTY>
+<!ATTLIST web_link link CDATA #IMPLIED>
+<!ELEMENT cartell EMPTY>
+<!ATTLIST cartell link CDATA #IMPLIED>
+]>

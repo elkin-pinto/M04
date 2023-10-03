@@ -1,0 +1,23 @@
+<!ELEMENT videojuegos (videojuego)+>
+<!ATTLIST videojuegos autor CDATA #FIXED "David_Pinto">
+<!ELEMENT videojuego (nombre,genero,infogeneral?,plataformas,modos_juego)>
+<!ATTLIST videojuego idvideojuego ID #REQUIRED>
+<!ATTLIST videojuego idrefprecuela IDREF #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ATTLIST genero subgenero (accion|arcade|deportivo|estrategia|simulacion|de_mesa|musical) "accion">
+<!ELEMENT infogeneral (foto*,enlace,idiomas,desarrollador,distribuidor,descripcion?)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT enlace (#PCDATA)>
+<!ELEMENT idiomas (#PCDATA)>
+<!ELEMENT desarrollador (#PCDATA)>
+<!ATTLIST desarrollador logo CDATA #IMPLIED>
+<!ELEMENT distribuidor (#PCDATA)>
+<!ATTLIST distribuidor logo CDATA #IMPLIED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT plataformas (plataforma)+>
+<!ELEMENT plataforma (#PCDATA)>
+<!ATTLIST plataforma precio CDATA #REQUIRED>
+<!ATTLIST plataforma fecha_salida CDATA #REQUIRED>
+<!ELEMENT modos_juego (modo_juego)+>
+<!ELEMENT modo_juego (#PCDATA)>

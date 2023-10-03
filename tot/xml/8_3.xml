@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obras_de_arte>
+    <obra>
+        <nom>Azul sobre blanco</nom>
+        <tipo>cuadro abstracto</tipo>
+        <autor>Pere Àguila</autor>
+        <any>2014</any>
+        <material>hecho en óleo</material>
+    </obra>
+    <obra>
+        <nom>Gris oscuro</nom>
+        <tipo>cuadro abstracto</tipo>
+        <autor>Pere Àguila</autor>
+        <any>2010</any>
+        <material>hecho en acuarela</material>
+    </obra>
+    <obra>
+        <nom>Camino largo</nom>
+        <tipo>escultura</tipo>
+        <autor>Marta Lambert</autor>
+        <any>1981</any>
+        <material>mármol</material>
+    </obra>
+</obras_de_arte> 

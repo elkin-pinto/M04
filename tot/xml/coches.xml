@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pagina_web xlmns:segunda_mano="http://Tienda_coches.com/segunda_mano">
+    <segunda_mano:coche id="01">
+        VOLKSWAGEN Tiguan Advance 2.0 TDI 110kW150CV BMT DSG 5p.
+        <marca>Volskwagen</marca>
+        <certificado>No</certificado>
+        <precio>
+            <al_contado>20600</al_contado>
+            <financiado>18900</financiado>
+        </precio>
+        <garantia>
+            1 año
+            <iva>IVA incluido</iva>
+        </garantia>
+        <ciudad>Barcelona</ciudad>
+        <combustible>Diésel</combustible>
+        <anyo>2017</anyo>
+        <kilometros>96190</kilometros>
+        <fecha_hora_publicacion>23/10 06:19</fecha_publicacion>
+        <foto>www.foto_coxe_volkwagen.png</foto>
+        <posibles_compradores>
+            <posible_comprador dni="12345678a">
+                <nom>Albert<nom>
+                <cognoms>Torres Castellon<cognoms>
+                <telefon>608453249<telefon>
+                <correu>AlbertTorres@gmail.com</correu>
+            </posible_comprador>
+            <posible_comprador dni="87654321b">
+                <nom>Roberto<nom>
+                <cognoms>Garcia Leon<cognoms>
+                <telefon>609938610<telefon>
+                <correu>RobertoGarcia@gmail.com</correu>
+            </posible_comprador>
+        <posibles_compradores>
+    </segunda_mano:coche>
+
+    <segunda_mano:coche id="02">
+        BMW Serie 1 116d 5p.
+        <marca>BMW</marca>
+        <certificado>Sí</certificado>
+        <precio>
+            <al_contado>24990</al_contado>
+            <financiado>23790</financiado>
+        </precio>
+        <garantia>
+            2 años
+            <iva>IVA incluido</iva>
+        </garantia>
+        <ciudad>Barcelona</ciudad>
+        <combustible>Diésel</combustible>
+        <anyo>2019</anyo>
+        <kilometros>1000</kilometros>
+        <fecha_publicacion>18/10 09:44</fecha_publicacion>
+        <foto>www.foto_coxe_bmw.png</foto>
+        <posibles_compradores>
+            <posible_comprador dni="87654321b">
+                <nom>Roberto<nom>
+                <cognoms>Garcia Leon<cognoms>
+                <telefon>609938610<telefon>
+                <correu>RobertoGarcia@gmail.com</correu>
+            </posible_comprador>
+        <posibles_compradores>
+    </segunda_mano:coche>
+
+     <segunda_mano:coche id="03">
+        VOLKSWAGEN Touareg 3.0 TDI 204CV Tiptronic BMT 5p.
+        <marca>Volskwagen</marca>
+        <certificado>No</certificado>
+        <precio>
+            <al_contado>22990</al_contado>
+            <financiado>21990</financiado>
+        </precio>
+        <garantia>
+            1 año
+            <iva>IVA incluido</iva>
+        </garantia>
+        <ciudad>Barcelona</ciudad>
+        <combustible>Diésel</combustible>
+        <anyo>2014</anyo>
+        <kilometros>120000</kilometros>
+        <fecha_publicacion>29/09 03:41</fecha_publicacion>
+        <foto>www.foto_coxe_volkwagen.png</foto>
+        <posible_comprador dni="958371353f">
+            <nom>Pablo<nom>
+            <cognoms>Ruben Ortiz<cognoms>
+            <telefon>602847162<telefon>
+            <correu>PabloOrtiz@gmail.com</correu>
+        </posible_comprador>
+    </segunda_mano:coche>
+
+     <segunda_mano:coche id="04">
+        CHRYSLER Sebring 2.0 LE Auto 4p.
+        <marca>Chrysler</marca>
+        <certificado>No</certificado>
+        <precio>
+            <al_contado>2890</al_contado>
+            <financiado></financiado>
+        </precio>
+        <garantia>
+            1 año
+            <iva>IVA incluido</iva>
+        </garantia>
+        <ciudad>Barcelona</ciudad>
+        <combustible>Gasolina</combustible>
+        <anyo>2001</anyo>
+        <kilometros>134000</kilometros>
+        <fecha_publicacion>21/10 11:22</fecha_publicacion>
+        <foto></foto>
+        <posibles_compradores>
+        <posibles_compradores>
+    </segunda_mano:coche>
+
+     <segunda_mano:coche id="05">
+        MERCEDES-BENZ Clase A A 200 d Urban 5p.
+        <marca>Mercedes</marca>
+        <certificado>No</certificado>
+        <precio>
+            <al_contado>23900</al_contado>
+            <financiado>22900</financiado>
+        </precio>
+        <garantia>
+            1 año
+            <iva>IVA incluido</iva>
+        </garantia>
+        <ciudad>Barcelona</ciudad>
+        <combustible>Diésel</combustible>
+        <anyo>2016</anyo>
+        <kilometros>47740</kilometros>
+        <fecha_publicacion>22/10 11:17</fecha_publicacion>
+        <foto>www.foto_coxe_mercedes.png</foto>
+        <posibles_compradores>
+            <posible_comprador dni="12345678a">
+                <nom>Albert<nom>
+                <cognoms>Torres Castellon<cognoms>
+                <telefon>608453249<telefon>
+                <correu>AlbertTorres@gmail.com</correu>
+            </posible_comprador>
+            <posible_comprador dni="87654321b">
+                <nom>Roberto<nom>
+                <cognoms>Garcia Leon<cognoms>
+                <telefon>609938610<telefon>
+                <correu>RobertoGarcia@gmail.com</correu>
+            </posible_comprador>
+        <posibles_compradores>
+    </segunda_mano:coche>
+</pagina_web>

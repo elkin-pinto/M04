@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libreria [
+<!ELEMENT libreria (libro+,tiquet+)>
+<!ELEMENT libro EMPTY>
+<!ATTLIST libro ISBN ID #REQUIRED titulo CDATA #REQUIRED>
+<!ELEMENT tiquet (linea)+>
+<!ELEMENT linea EMPTY>
+<!ATTLIST linea libro IDREF #REQUIRED>
+]>
+
+<libreria>
+	<libro ISBN="A9788497592581" titulo="El origen de las especies"/>
+  	<libro ISBN="A978849759251" titulo="La Celestina"/>
+  	<libro ISBN="A8481301264" titulo="El nombre de la Rosa"/>
+    <tiquet>
+        <linea libro="A978849759251"/>
+    </tiquet>
+</libreria>

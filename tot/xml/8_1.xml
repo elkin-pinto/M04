@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumne>
+    <nom>Juan</nom>
+    <cognom>García</cognom>
+    <data_neixement>
+        <dia>23</dia>
+        <mes>02</mes>
+        <any>2001</any>
+    </data_neixement>
+    <poblacioDeNeixement>Barcelona</poblacioDeNeixement>
+</alumne>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Empresa [
+   <!ELEMENT Empresa (Empleado)+>
+   <!ELEMENT  Empleado (Apellido, Apellido, Nombre, (Email | Telefono), Direccion)>
+   <!ATTLIST Empleado NumEmpleado CDATA #IMPLIED>
+   <!ELEMENT Apellido (#PCDATA)>
+   <!ELEMENT Nombre (#PCDATA)>
+   <!ELEMENT Email (#PCDATA)>
+   <!ELEMENT Telefono (#PCDATA)>
+   <!ELEMENT Direccion EMPTY>
+   <!ATTLIST Direccion Calle CDATA #REQUIRED>
+   <!ATTLIST Direccion Ciudad CDATA #IMPLIED>
+   <!ATTLIST Direccion CP CDATA #REQUIRED>
+]>
+
+
+<Empresa>
+    <Empleado NumEmpleado="1234567890">
+      <Apellido>Perez</Apellido>
+      <Apellido>Gonzales</Apellido>
+      <Nombre>Juan</Nombre>
+      <Email>juanperez@gmail.com</Email>
+      <Direccion Calle="Carrer de Pau Claris, 121" Ciudad="Barcelona" CP="08009"/>
+
+    </Empleado>
+  </Empresa>
+  
