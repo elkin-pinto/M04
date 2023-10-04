@@ -1,16 +1,20 @@
 import java.util.*
 fun main() {
     var scan = Scanner(System.`in`)
-    // agafarem la entrada de dades i calcularem el nombre de febrero després
-    var casos = scan.nextInt()
-    var pisos = scan.nextInt()
-    var febrero = 0
-    for (i in 1..casos) {
-        for (i in 1..pisos) {
-            febrero = febrero + (i*i)
+    // busquem el numero de voltes i crear variables per després. 
+    var voltes = scan.nextInt()
+    var energia:Int
+    var energia_mas_alta = 0
+    for (i in 1..voltes) { // donarem tantes voltes com digui l'usuari
+        for (x in 1..5) {
+           energia = scan.nextInt()
+           if (energia > energia_mas_alta) energia_mas_alta = energia // Guardarem el valor de enegia més gren dels 5 casos
         }
-        println(febrero)
-        febrero = 0
-        pisos = scan.nextInt()
+        when  { // Depenen del valor d'energia escollirem un resultat
+            energia_mas_alta < 1000 -> println("H")
+            energia_mas_alta < 10000 -> println("B")
+            energia_mas_alta >= 10000 -> println("M")
+        }
+        energia_mas_alta = 0
     }
 }
