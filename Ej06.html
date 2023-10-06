@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ej06</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Ficha de la película</legend>
+        <form>
+            <label for="titol">Título</label>
+            <input type="text" id="titol" name="titol"><br>
+            <label for="director">Director</label>
+            <input type="text" id="director" name="director"><br>
+            <label for="fecha_estreno">Fecha de estreno:</label>
+            <input type="text" id="fecha_estreno" name="fecha_estreno"><br>
+            <label for="poster">Póster:</label>
+            <input type="file" id="poster" name="poster"><br>
+            <label for="version">Versión:</label><br>
+            <label>IMAX</label>
+            <input type="checkbox" id="version1" name="version" value="IMAX">
+            <label>3D</label>
+            <input type="checkbox" id="version2" name="version" value="3D">
+            <label>Full HD</label>
+            <input type="checkbox" id="version3" name="version" value="Full HD"><br>
+            <label>Clasificación:</label><br>
+            <label for="clasificacio1">TP</label>
+            <input type="radio" id="clasificacio1" name="clasificacio">
+            <label for="clasificacio2">+12</label>
+            <input type="radio" id="clasificacio2" name="clasificacio">
+            <label for="clasificacio3">+15</label>
+            <input type="radio" id="clasificacio3" name="clasificacio">
+            <label for="clasificacio4">+18</label>
+            <input type="radio" id="clasificacio4" name="clasificacio">
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Ficha de proyección</legend>
+        <form>
+            <label for="sala">Sala</label>
+            <input type="text" id="sala" name="sala"><br>
+            <textarea name="sinopsi" rows="7" cols="120"></textarea>
+            <select id="idioma" name="idioma">
+                <option value="ingles">Ingles</option>
+                <option value="espanyol">Español</option>
+                <option value="catala">Català</option>
+            </select>
+            <label for="sesion">Sesión</label>
+            <input type="time" id="sesion" name="sesion"><br>
+            <label for="proyecciones">Días de proyección:</label><br>
+            <select multiple id="dia" name="dia">
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miercoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sabado</option>
+                <option value="domingo">Domingo</option>
+            </select><br>
+            <label for="color">Elige un color de fondo:</label>
+            <input type="color" id="color" name="color"><br>
+            <label for="puntuacion">Puntuación del público:</label>
+            <progress id="puntuacion" name="puntuacion" value="80" max="100"></progress>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
