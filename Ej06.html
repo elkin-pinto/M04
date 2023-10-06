@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Ej06</title>
+    <style>
+
+
+progress[value] {
+  --color: rgb(63, 97, 248); /* the progress color */
+  --background: lightgrey; /* the background color */
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 200px;
+  height: 10px;
+  margin: auto;
+  border-radius: 8em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-bar {
+  border-radius: 8em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 8em;
+  background: var(--color);
+}
+progress[value]::-moz-progress-bar {
+  border-radius: 8em;
+  background: var(--color);
+}
+
+
+
+    </style>
 </head>
 <body>
-    <fieldset>
-        <legend>Ficha de la película</legend>
-        <form>
+    <form method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Ficha de la película</legend>
             <label for="titol">Título</label>
             <input type="text" id="titol" name="titol"><br>
             <label for="director">Director</label>
@@ -17,11 +50,11 @@
             <label for="poster">Póster:</label>
             <input type="file" id="poster" name="poster"><br>
             <label for="version">Versión:</label><br>
-            <label>IMAX</label>
+            <label for="version1">IMAX</label>
             <input type="checkbox" id="version1" name="version" value="IMAX">
-            <label>3D</label>
+            <label for="version2">3D</label>
             <input type="checkbox" id="version2" name="version" value="3D">
-            <label>Full HD</label>
+            <label for="version3">Full HD</label>
             <input type="checkbox" id="version3" name="version" value="Full HD"><br>
             <label>Clasificación:</label><br>
             <label for="clasificacio1">TP</label>
@@ -32,14 +65,19 @@
             <input type="radio" id="clasificacio3" name="clasificacio">
             <label for="clasificacio4">+18</label>
             <input type="radio" id="clasificacio4" name="clasificacio">
-        </form>
-    </fieldset>
-    <fieldset>
-        <legend>Ficha de proyección</legend>
-        <form>
+        </fieldset>
+        <fieldset>
+            <legend>Ficha de proyección</legend>
+        
             <label for="sala">Sala</label>
-            <input type="text" id="sala" name="sala"><br>
-            <textarea name="sinopsi" rows="7" cols="120"></textarea>
+            <select id="sala" name="sala">
+                <option></option>
+                <option value="cine_de_barrio">cine de barrio</option>
+                <option value="cines_yelmo">Cines Yelmo</option>
+                <option value="cinesa">Cinesa</option>
+                <option value="cines_full_hd">Cines Full HD</option>
+            </select><br>
+            <textarea name="sinopsi" rows="7" cols="120">Escribe una breve sinopsis</textarea><br>
             <select id="idioma" name="idioma">
                 <option value="ingles">Ingles</option>
                 <option value="espanyol">Español</option>
@@ -48,7 +86,7 @@
             <label for="sesion">Sesión</label>
             <input type="time" id="sesion" name="sesion"><br>
             <label for="proyecciones">Días de proyección:</label><br>
-            <select multiple id="dia" name="dia">
+            <select multiple id="dia" name="dia" size="4">
                 <option value="lunes">Lunes</option>
                 <option value="martes">Martes</option>
                 <option value="miercoles">Miercoles</option>
@@ -61,8 +99,8 @@
             <input type="color" id="color" name="color"><br>
             <label for="puntuacion">Puntuación del público:</label>
             <progress id="puntuacion" name="puntuacion" value="80" max="100"></progress>
-        </form>
-    </fieldset>
+        </fieldset>
+    </form>
     
 </body>
 </html>
