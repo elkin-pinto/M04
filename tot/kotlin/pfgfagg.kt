@@ -1,65 +1,84 @@
 import java.util.*
+
 fun main() {
-    var scan = Scanner(System.`in`)
-    // Definim el scanner per fer-ho servir
-    // Fem un bucle que llegira cada input i determinara si es valid
+    // Primer definirem el scanner
+    val scan = Scanner(System.`in`)
+    var costat1:Int = 0
+    var costat2:Int = 0
+    var costat3:Int = 0
     var boolean = true
-    var vueltas = 0
-    var dia:Int = 0
-    var mes:Int = 0
-    var any:Int = 0
-    while (boolean && vueltas != 3) {
-        vueltas ++
-        when (vueltas) {
-            1 -> print("Introdueixi el any: ")
-            2 -> print("Introdueixi el mes: ")
-            3 -> print("Introdueixi el dia: ")
-        }
+    var ha_hecho_el_1 = false
+    while (boolean == true) {
+        println("Escoge una de las siguientes opciones: \n\n1- Comprobar si puede ser un triángulo.\n2- Comprobar si es triángulo rectangulo.\n3- Sarber que clase de triángulo és.\n4- Calcular perimetro y area.\n5- Salir\n")
         if (scan.hasNextInt()) {
             var input = scan.nextInt()
-            if (vueltas == 1) {
-                if (input in 0..2023) {any = input}
-                else {
-                    println("Error")
-                    vueltas--
+            if (input in 1..5){
+                when (input) {
+                    1 -> {
+                        for (i in 1..3){
+                            do {
+                                if (input < 0) {
+                                    println("Numero no valido")
+                                }
+                                do {
+                                    print("Di un numero entero positivo: ")
+                                    if (!scan.hasNextInt()) {
+                                        println("Numero no valido")
+                                        scan.next()
+                                    }
+                                } while (!scan.hasNextInt()) 
+                                input = scan.nextInt()
+                            }while(input < 0)
+                                                          
+                            when (i) {
+                                1 -> costat1 = input
+                                2 -> costat2 = input
+                                3 -> costat3 = input
+                            }
+                        }
+                        if (costat1 + costat2 > costat3 && costat2 + costat3 > costat1 && costat1 + costat3 > costat2) println("\n\nSí puede ser un triángulo.\n\n")
+                        else println("\n\nNo puede ser un triángulo.\n\n")
+                        ha_hecho_el_1 = true
+                        }
+                    
+                    2 -> {  
+                            if (ha_hecho_el_1 == true){
+                                when {
+                                    costat1 > costat2 && costat1 > costat3 && costat2*costat2 + costat3*costat3 == costat1*costat1 -> println("Sí és triángulo rectangulo.")                                   
+                                    costat2 > costat1 && costat2 > costat3 && costat1*costat1 + costat3*costat3 == costat2*costat2 -> println("Sí és triángulo rectangulo.")
+                                    costat3 > costat2 && costat3 > costat1 && costat1*costat1 + costat2*costat2 == costat3*costat3 -> println("Sí és triángulo rectangulo.")
+                                    else -> println("No és triángulo rectangulo.")
+                                }
+                            }
+                            else {
+                                println("Has primero la opción 1 para establecer las medidas.")
+                            }
+                        }
+                    3 -> {  
+                            if (ha_hecho_el_1 == true){
+                                when {
+                                    costat1 == costat2 && costat1 == costat3 -> println("Tu triángulo és equilatero.")
+                                    costat1 == costat2 || costat1 == costat3 || costat2 == costat3 -> println("Tu triángulo és isóseles.")
+                                    costat1 != costat2 && costat1 != costat3 && costat2 != costat3 -> println("Tu triángulo és escaleno.")
+                                }
+                            }
+                            else {
+                                println("Has primero la opción 1 para establecer las medidas.")
+                            }
+                        }
+                    4 -> boolean = false
+                    5 -> boolean = false
                 }
             }
-            if (vueltas == 2) {
-                if (input in 1..12) {mes = input}
-                else {
-                    println("Error")
-                    vueltas--
-                }
+        
+            else {
+            var error = scan.nextLine()
+            println(error + " no es una opcion valida...\n\nVuelve a intentarlo.")
             }
-            if (vueltas == 3) {
-                when {
-                    mes in intArrayOf(4,6,9,11) && input in 1..30 -> dia = input
-                    (mes == 2) && input in 1..28 || any % 4 == 0 && input in 1..29 && any % 100 != 0 || any % 400 == 0 -> dia = input
-                    mes in intArrayOf(1,3,5,7,8,10,12) && input in 1..31 -> dia = input
-                    else -> {println("Error"); vueltas--}
-                }
-            }  
         }
         else {
-            println("Error")
-            vueltas--
-            scan.next()
+            var error = scan.nextLine()
+            println(error + " no es una opcion valida...\n\nVuelve a intentarlo.")
         }
-    }
-    when {
-        mes == 1 && dia > 19 || mes == 2 && dia < 19 -> println("El teu signe del sodiac és: Acuario")
-        mes == 2 && dia > 18 || mes == 3 && dia < 21 -> println("El teu signe del sodiac és: Piscis")
-        mes == 3 && dia > 20 || mes == 4 && dia < 20 -> println("El teu signe del sodiac és: Aries")
-        mes == 4 && dia > 19 || mes == 5 && dia < 21 -> println("El teu signe del sodiac és: Tauro")
-        mes == 5 && dia > 20 || mes == 6 && dia < 21 -> println("El teu signe del sodiac és: Géminis")
-        mes == 6 && dia > 20 || mes == 7 && dia < 23 -> println("El teu signe del sodiac és: Cáncer")
-        mes == 7 && dia > 22 || mes == 8 && dia < 23 -> println("El teu signe del sodiac és: Leo")
-        mes == 8 && dia > 22 || mes == 9 && dia < 23 -> println("El teu signe del sodiac és: Virgo")
-        mes == 9 && dia > 22 || mes == 10 && dia < 23 -> println("El teu signe del sodiac és: Libra")
-        mes == 10 && dia > 22 || mes == 11 && dia < 22 -> println("El teu signe del sodiac és: Escorpio")
-        mes == 11 && dia > 21 || mes == 12 && dia < 22 -> println("El teu signe del sodiac és: Sagitario")
-        mes == 12 && dia > 21 || mes == 1 && dia < 20 -> println("El teu signe del sodiac és: Capricornio")
-    }
-    
-
+    } 
 }
