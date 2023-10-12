@@ -6,6 +6,7 @@ fun main() {
     var input = 10000001
 
     print("Introduce una fecha de nacimiento den formato ddmmaaaa: ")
+    // Comprobamos que los datos sean validos y que esten dentro del rango que queremos.
     do {
         if(input >= 100000000 || input < 10000000) {
             println("No és una fecha valida.")
@@ -20,7 +21,7 @@ fun main() {
         } while (!scan.hasNextInt())
         input = scan.nextInt()
     }while (input >= 100000000 || input < 10000000)
-    
+    // Hasta que el numero de sea de una unidad lo iremos extrayendo las unidades y sumandolas, y al final mostraremos los resultados.
     while(input > 9) {
         var suma_digitos = 0
         while (input != 0) {

@@ -7,6 +7,7 @@ fun main() {
     var es_primo = true
     var x = 0
     var proximo_es_primo = false
+    // Comrpobamos que nos da un numero entero positivo.
     do {
         if (input < 2) {
             println("Número no valido")
@@ -23,12 +24,14 @@ fun main() {
         input = scan.nextInt()
     }while(input < 0)
     var proximo_n_primo = input
+    // Diremos si es primo el numero que nos dio dividiendolo por cada numero menos que el hasta que supere su mitatd
     while (x < (input / 2)) {
         x++
         if (input % x == 0 && x != 1){
             es_primo = false
         }
     }
+    // Con la misma idea de antes haremos lo mismo, solo que no parara hasta encontrar un numero que sea primo. 
     while (proximo_es_primo == false) {
         proximo_n_primo++
         proximo_es_primo = true
@@ -40,6 +43,7 @@ fun main() {
             }
         }
     }
+    //  Damos los resultados
     if (es_primo) {
         println("$input no és primo.\n\n El proximo numero primo a $input és $proximo_n_primo")
     }

@@ -10,6 +10,7 @@ fun main() {
     var suma_primos_2 = 0
      
     for (i in 1..2) {
+        // hacemos un bucle que solo se haga dos veces y comprovamos que nos den valores validos. 
         do {
         if (input < 2) {
             println("Número no valido")
@@ -24,6 +25,7 @@ fun main() {
         } while (!scan.hasNextInt()) 
         input = scan.nextInt()
         }while(input < 0)
+        // Hacemos que cada numero menor al imput compruebe que es imput, y si lo és lo sumara a una variable dependiendo de que numero de vuelta sea.
         for (numero_primo in 2..(input-1)) {
             x = 0
             while (x < (input / 2)) {
@@ -41,6 +43,7 @@ fun main() {
             } 
         }
     }
+    // Mostramos los resultados.
     print("Los numeros introducidos ")
     if (suma_primos_1 == suma_primos_2) {
         println("sí son amigos")

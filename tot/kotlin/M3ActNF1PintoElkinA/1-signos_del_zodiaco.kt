@@ -8,6 +8,7 @@ fun main() {
     var dia:Int = 0
     var mes:Int = 0
     var any:Int = 0
+    // Este bucle lo que hara es dar tre vueltas y por cada vuelta hara algo distinto por el numero de la vuelta en la que este, y si el usuario mete un data no valido en un input volvera a hacer la misma vuelta hasta que meta un dato valido.
     while (boolean && vueltas != 3) {
         vueltas ++
         when (vueltas) {
@@ -17,6 +18,7 @@ fun main() {
         }
         if (scan.hasNextInt()) {
             var input = scan.nextInt()
+            // Dependiendo de la vuelta en la que este 1..3, guardara el input en una variable distinta y lo validara respectivamente.
             if (vueltas == 1) {
                 if (input in 0..2023) {any = input}
                 else {
@@ -46,6 +48,7 @@ fun main() {
             scan.next()
         }
     }
+    // Con los datos ya validados lo que haremos es decir el signo del zodiaco
     when {
         mes == 1 && dia > 19 || mes == 2 && dia < 19 -> println("El teu signe del zodiac és: Acuario")
         mes == 2 && dia > 18 || mes == 3 && dia < 21 -> println("El teu signe del zodiac és: Piscis")
