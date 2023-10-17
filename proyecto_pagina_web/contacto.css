@@ -1,0 +1,95 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+/* Header*/
+header {
+    width: auto;
+    height: 20%;
+}
+header div {
+    width: auto;
+}
+
+#header-icon {
+    background-color:#0A91AB;
+    height: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+#header-icon figure {
+    height: 70%;
+    width: auto;
+    margin: auto;
+}
+#header-icon figure img {
+    height: 100%;
+    width: auto;
+}
+
+#sticky-header {
+    background-color: #FFC045;
+    z-index: 1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    border-bottom: 3px solid gray;
+    top: 0px;
+}
+#sticky-header a {
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Arial;
+    color: black;
+    margin: auto;
+    margin-left:12px;
+    margin-right:12px;
+    font-weight: 450;
+}
+
+#sticky-header a:hover {
+    color: #0A91AB;
+}
+main h1 {
+    color:#0A91AB;
+    font-size: 45px;
+    margin-left: 30px
+}
+#mapas {
+    display: flex;
+}
+#mapas article {
+    width: 500px;
+}
+#mapas article > h2 {
+    margin-left: 20px;
+    color: #FFC045;
+} 
+#mapas article > figure {
+    border: 3px dotted #FFC045;
+    width: 400px;
+    height: 300px;
+}
+#mapas article > div {
+    display: flex;
+    margin-left: 50px;
+}
+#mapas article > div figure {
+    width: 50px;
+    height: 50px;
+}
+#mapas article > div figure img {
+    width: 100%;
+    height: 100%;
+}
+#mapas article > div p {
+    margin: auto;
+    margin-left: 10px;
+}

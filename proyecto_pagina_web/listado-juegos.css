@@ -67,107 +67,109 @@ header div {
     flex-wrap: wrap;
     row-gap: 50px;
     }
-    main h1 {
-        color:#0A91AB;
-        font-size: 45px;
-        margin-left: 30px
-    }
-    #videojuegos {
-        margin-left: 30px;
-    }
+main h1 {
+    color:#0A91AB;
+    font-size: 45px;
+    margin-left: 30px
+}
+#videojuegos {
+    margin-left: 30px;
+}
+
+/* Section videojuegos article*/
+#section-videojuegos article {
+    width: 800px;
+    height: 300px;
+    border: 3px dotted #FFC045;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#section-videojuegos article > div:first-child {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    height: 100%;
+}
+#section-videojuegos article > div > div {
+    overflow-y: scroll;
+}
+
+
+
+#section-videojuegos article figure {
+    height: 100%;
+    margin: 0%;
+    border-radius: 20px 0px 0px 20px;
+    border-right: 2px dotted #FFC045;
     
-    /* Section videojuegos article*/
-    #section-videojuegos article {
-        width: 800px;
-        height: 300px;
-        border: 2px dotted #FFC045;
-        border-radius: 20px;
-        margin: auto;
-    }
+}
+#section-videojuegos article figure img {
+    height: 100%;
+    border-radius: inherit;
+}
+#section-videojuegos article div h2 {
+    color: #FFC045;
+    font-size: 25px;
+    font-family: 'Kanit';
+    margin: 10px;
+}
+#section-videojuegos article div p {
+    color: gray;
+    line-height: 150%;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 10px;
+}
 
-    #section-videojuegos article > div:first-child {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-        height: 100%;
-    }
-    #section-videojuegos article > div > div {
-        overflow-y: scroll;
-    }
-
-
-
-    #section-videojuegos article figure {
-        height: 100%;
-        margin: 0%;
-        border-radius: 20px 0px 0px 20px;
-        border-right: 2px dotted #FFC045;
-        
-    }
-    #section-videojuegos article figure img {
-        height: 100%;
-        border-radius: inherit;
-    }
-    #section-videojuegos article div h2 {
-        color: #FFC045;
-        font-size: 25px;
-        font-family: 'Kanit';
-        margin: 10px;
-    }
-    #section-videojuegos article div p {
-        color: gray;
-        line-height: 150%;
-        font-size: 15px;
-        font-family: sans-serif;
-        margin: 10px;
-    }
+.leer-mas {
+    height: 40px;
+    width: 70px;
+    background-color: #FFC045;
+    position: relative;
+    border-radius: 10%;
+    display: flex;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#section-videojuegos article div a {
+    font-size: 13px;
+    text-align: center;
+    margin: auto;
+    color: black;
+    text-decoration: none;
+}
+#pagina {
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 70px;
+    width: 350px;
+    display: flex;
+}
+#pagina > div {
+    width: 100%;
+    height: 100%;
+    border: 3px solid darkgray ;
+    margin: auto;
+}
+#pagina div > button {
+    text-decoration: none;
+    color: rgb(71, 127, 201);
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+}
+#pagina div:first-child > button {
+    background-color: rgb(71, 127, 201);
+    color: white;
     
-   .leer-mas {
-        height: 40px;
-        width: 70px;
-        background-color: #FFC045;
-        position: relative;
-        border-radius: 10%;
-        display: flex;
-        float: right;
-        margin-top: 20px;
-        margin-right: 10px;
-    }
-    #section-videojuegos article div a {
-        font-size: 13px;
-        text-align: center;
-        margin: auto;
-        color: black;
-        text-decoration: none;
-    }
-    #pagina {
-        margin: auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        height: 70px;
-        width: 350px;
-        display: flex;
-    }
-    #pagina > div {
-        width: 100%;
-        height: 100%;
-        border: 3px solid darkgray ;
-        margin: auto;
-    }
-    #pagina div > button {
-        text-decoration: none;
-        color: rgb(71, 127, 201);
-        height: 100%;
-        width: 100%;
-        display: block;
-        margin: auto;
-        text-align: center;
-        font-size: 40px;
-        background-color: transparent;
-        border: none;
-    }
-    #pagina div:first-child > button {
-        background-color: rgb(71, 127, 201);
-        color: white;
-    }
+}
