@@ -8,7 +8,7 @@ fun main() {
     print("Introduce una fecha de nacimiento den formato ddmmaaaa: ")
     // Comprobamos que los datos sean validos y que esten dentro del rango que queremos.
     do {
-        if(input >= 100000000 || input < 10000000) {
+        if(input >= 100000000 || input < 1000000) {
             println("No és una fecha valida.")
             print("Vuelve a intentarlo: ")
         }
