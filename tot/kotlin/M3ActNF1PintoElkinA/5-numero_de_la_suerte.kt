@@ -20,7 +20,7 @@ fun main() {
         }
         } while (!scan.hasNextInt())
         input = scan.nextInt()
-    }while (input >= 100000000 || input < 10000000)
+    }while (input >= 100000000 || input < 1000000)
     // Hasta que el numero de sea de una unidad lo iremos extrayendo las unidades y sumandolas, y al final mostraremos los resultados.
     while(input > 9) {
         var suma_digitos = 0

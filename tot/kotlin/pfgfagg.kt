@@ -1,33 +1,30 @@
 import java.util.*
 
 fun main() {
-    // Primer definirem el scanner
-    val scan = Scanner(System.`in`)
-    var input = 10000001
-
-    print("Introduce una fecha de nacimiento den formato ddmmaaaa: ")
-    do {
-        if(input >= 100000000 || input < 10000000) {
-            println("No és una fecha valida.")
-            print("Vuelve a intentarlo: ")
+    var scan = Scanner(System.`in`)
+    var vueltas = scan.nextInt()
+    var frase = scan.nextLine()
+    for (i in 1..vueltas) {
+        var a = 0
+        var e = 0
+        var i = 0
+        var o = 0
+        var u = 0
+        frase = scan.nextLine()
+        for (x in frase) {
+            when (x) {
+                'a' -> a++
+                'e' -> e++
+                'i' -> i++
+                'o' -> o++
+                'u' -> u++
+                'A' -> a++
+                'E' -> e++
+                'I' -> i++
+                'O' -> o++
+                'U' -> u++
+            }
         }
-        do {
-        if (!scan.hasNextInt()) {
-            println("No és una fecha valida.")
-            print("Vuelve a intentarlo: ")
-            scan.next()
-        }
-        } while (!scan.hasNextInt())
-        input = scan.nextInt()
-    }while (input >= 100000000 || input < 10000000)
-    
-    while(input > 9) {
-        var suma_digitos = 0
-        while (input != 0) {
-            suma_digitos = suma_digitos + (input % 10)
-            input = (input - (input % 10)) / 10
-        }
-        input = suma_digitos
+        println("A: $a E: $e I: $i O: $o U: $u")
     }
-    print("Tu numero de la suerte és: $input")
 }
