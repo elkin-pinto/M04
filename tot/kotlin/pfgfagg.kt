@@ -1,30 +1,20 @@
 import java.util.*
 
 fun main() {
-    var scan = Scanner(System.`in`)
-    var vueltas = scan.nextInt()
-    var frase = scan.nextLine()
-    for (i in 1..vueltas) {
-        var a = 0
-        var e = 0
-        var i = 0
-        var o = 0
-        var u = 0
-        frase = scan.nextLine()
-        for (x in frase) {
-            when (x) {
-                'a' -> a++
-                'e' -> e++
-                'i' -> i++
-                'o' -> o++
-                'u' -> u++
-                'A' -> a++
-                'E' -> e++
-                'I' -> i++
-                'O' -> o++
-                'U' -> u++
-            }
+    var vueltas = scan.next.Int()
+    scan.nextline()
+    for (a in 1..vueltas) {
+        var frase = scan.nextline()
+        var web = scan.nextline()
+        var total_letras = 0
+        var igual = 0
+        if (frase.lenght() >= web.lenght()) x = frase.lenght()
+        else x = web.lenght()
+        for (i in 0..(x-1)) {
+            if (frase[i] == web[i]) igual++
+            total_letras++
         }
-        println("A: $a E: $e I: $i O: $o U: $u")
+        if (igual >=(total_letras/2 )) println("GRACIES WEBCASTELLER")
+        else println("WEBCASTELLER ESTA TRAVIESO HOY")
     }
 }
