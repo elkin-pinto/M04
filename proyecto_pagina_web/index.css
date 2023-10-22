@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39;');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39;');
+
+* {
+    font-family: 'Kanit', 'Maven Pro', Helvetica, Arial, sans-serif;
+}
 html {
     height: 100%;
     width: 100%;
@@ -92,7 +98,7 @@ main h1 {
     height: 100%;
     border-radius: inherit;
 }
-#section-videojuegos article div h2 {
+#section-videojuegos article div h2 a {
     color: #FFC045;
     font-size: 25px;
     margin: 10px;
@@ -188,10 +194,11 @@ aside div {
     margin-right: 4px;
     margin-top: 0%;
 }
-#trucos_noticias section div article div > h3 {
+#trucos_noticias section div article div > h3 a {
     color: #FFC045;
     font-size: 22px;
     text-align: center;
+    text-decoration: none;
 }
 #trucos_noticias article figure {
     width: 100%;

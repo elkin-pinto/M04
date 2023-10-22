@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39;');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39;');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+/* Header*/
+header {
+    width: auto;
+    height: 20%;
+}
+header div {
+    width: auto;
+}
+
+#header-icon {
+    background-color:#0A91AB;
+    height: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+#header-icon figure {
+    height: 70%;
+    width: auto;
+    margin: auto;
+}
+#header-icon figure img {
+    height: 100%;
+    width: auto;
+    margin: 0%;
+}
+
+#sticky-header {
+    background-color: #FFC045;
+    z-index: 1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    border-bottom: 3px solid gray;
+    top: 0px;
+}
+#sticky-header a {
+    font-size: 14px;
+    text-decoration: none;
+    font-family: Arial;
+    color: black;
+    margin: auto;
+    margin-left:12px;
+    margin-right:12px;
+    font-weight: 450;
+}
+
+#sticky-header a:hover {
+    color: #0A91AB;
+}
+#videojuegos {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #0A91AB;
+}
+#videojuegos > div {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: #0A90AB25;
+}
+#videojuegos > div > figure {
+    width: 1000px;
+    height: 100%;
+    margin: 0%;
+}
+#videojuegos > div > figure img {
+    width: 100%;
+    height: 100%;
+}
+#videojuegos > div > div {
+    margin-left: 5%;
+    width: 40%;
+}
+#videojuegos > div > div h1 {
+    color: #FFC045;
+    font-size: 30px;
+    font-weight: 700;
+}
+#videojuegos > div > div p {
+    font-family: Helvetica;
+    margin-right: 25px;
+    font-size: 17px;
+}
+#info {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+#rasgos {
+    margin-top: 0px;
+    width: 40%;
+    border: 3px solid #0A91AB;
+    border-top: none;
+    background-color: rgba(177, 175, 175, 0.652);
+    overflow: hidden;
+}
+#rasgos > article {
+    padding: 30px;
+    width:100%;
+    margin-left: 50px;
+}
+#rasgos > article h1 {
+    color: #FFC045;
+    margin: 0%;
+    font-size: 35px;
+}
+#rasgos > article li{
+    font-size: 20px;
+}
