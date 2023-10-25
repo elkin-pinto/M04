@@ -1,40 +1,29 @@
 import java.util.*
 
 fun main() {
+    // primero pediremos los datos al usuario
     val scan = Scanner(System.`in`)
-    var vueltas = scan.nextInt()
-    scan.nextLine()
-    for (i in 1..vueltas) {
-        var lalafel = 0
-        var telaranya = 0
-        var telaranya_llena:Int
-        var frase = scan.nextLine()
-        var caben = scan.nextInt()
-        var cauntas_llenan:Int
-        scan.nextLine()
-        frase = frase.uppercase()
-        var lista = frase.split(", ")
-        for (x in lista) {
-            when (x) {
-                "TELARANYA" -> telaranya++
-                "ARANYA" -> {
-                    if (lalafel > 0 && caben > 0) {
-                        cauntas_llenan = lalafel / caben
-                        telaranya = telaranya - (cauntas_llenan + (lalafel - (caben * cauntas_llenan)))
-                    }
-                    if (telaranya < 0) telaranya = 0
-                    lalafel = 0
-                }
-                "LALAFEL" -> lalafel++
-            }
+    var input = scan.nextLine()
+    // con los datos cogidos los separaremos y los meteremos a una lista
+    var lista = input.split(" ")
+    // ya en una lista los haremos los calculos y comprobaciones
+    var experiencia = lista[1].toLongOrNull()
+    var jugador = lista[0]
+    var grupo = lista[2]
+    if (experiencia != null) {
+        if (experiencia > -1L) {
+        when (grupo) {
+        "A" -> experiencia += 50L
+        "B" -> experiencia += 20L
+        "C" -> experiencia += 10L
+        else -> println("ERROR")
         }
-        if (caben > 0 && telaranya > 0) {
-            cauntas_llenan = lalafel / caben
-            if (cauntas_llenan >= telaranya) telaranya_llena = telaranya
-            else telaranya_llena = cauntas_llenan
+        if (grupo == "A" || grupo == "B" || grupo == "C") {
+            println("Jugador: $jugador - Grup: $grupo - Punts totals: $experiencia")
         }
-        else telaranya_llena = 0
-        if (telaranya_llena < 0) telaranya_llena = 0
-        println("Hay $telaranya_llena telaranyas llenas.")
+        
+        }
+        else println("ERROR")
     }
+    else println("ERROR")
 }

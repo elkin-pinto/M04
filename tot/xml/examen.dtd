@@ -1,0 +1,5 @@
+<!ELEMENT paises (pais)*>
+<!ELEMENT pain (nombre, unionEuropea?, otan?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT otam EMPTY>
+<!ELEMENT unionEuropea EMPTY>
