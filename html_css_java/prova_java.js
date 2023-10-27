@@ -1,7 +1,7 @@
 window.alert("Intenta adivinar el numero secret. Tienes 10 intentos");
 var te_mueres = false;
 while(!te_mueres) {
-    var num_random = parseInt(Math.random()*100)+1;
+    var num_random = Math.floor(Math.random()*101);
     var es_el_numero = false;
     var intentos = 10;
     do {
@@ -25,10 +25,11 @@ while(!te_mueres) {
                 te_mueres = true;
             }
         }
-    }while (!es_el_numero && te_mueres == false)
+    }while (!es_el_numero && te_mueres == false && intentos != 0)
     if (te_mueres == false) {
         if (intentos == 0) {
             window.alert("Bona sort la proxima vegada");
         }
+        window.alert("Ara torna a intentar-ho");
     }
 }

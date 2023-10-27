@@ -8,6 +8,7 @@ fun main(args: Array<String>) {
 
     //Però ens serveix per rebre el resultat d'una operació
     arr = "Hola que tal?".split(" ").toTypedArray()
+    arr += "No"
     println("Arr size: ${arr.size}")
     for (i in arr)
         println(i)
