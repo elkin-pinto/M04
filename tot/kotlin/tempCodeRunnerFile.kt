@@ -1,1 +1,1 @@
-lalafel
+arrayNumeros += scan.nextInt()

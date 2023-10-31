@@ -6,13 +6,11 @@ fun main() {
     
     repeat(vueltas) {
         var casos = scan.nextInt()
-        var arrayNumeros = arrayOfNulls(casos)
-        for (i in 0..(arrayNumeros.size - 1)) {
-            arrayNumeros[i] = scan.nextInt()
-        }
-        arrayNumeros.sort()
-        for (i in 0..(arrayNumeros - 1)) {
-            
-        }
+        scan.nextLine()
+        var arrayStrings = arrayOf<String>()
+        repeat(casos - 1) {arrayStrings += scan.nextLine()}
+        var caso_a_comprobar = scan.nextLine()
+        if (caso_a_comprobar in arrayStrings) println("SI")
+        else println("NO")
     }
 } 
