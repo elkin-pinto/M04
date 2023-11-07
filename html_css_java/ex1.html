@@ -46,6 +46,73 @@
             <td>Fila 2 cel·la 2</td>
         </tr>
     </table><br>
-    <input type="button" onclick="insertarFila()" value="Inserta Fila">
+    <input type="button" onclick="insertarFila()" value="Inserta Fila"><br>
+    <input type="button" onclick="insertarFila_a()" value="Inserta Fila">
+
+    
+    <h1>Exercici 6</h1>
+    <table id="Taula_6" border="1" onload="insertarFila_6_a()">
+        <tr>
+            <td>fila 1 cel·la 1</td>
+            <td>fila 1 cel·la 2</td>
+        </tr>
+        <tr>
+            <td>Fila 2 cel·la 1</td>
+            <td>Fila 2 cel·la 2</td>
+        </tr>
+    </table><br>
+    Escoge un casilla: <input type="text" id="input_6b" placeholder="Expresar como: FC (fila y columna)"><br>
+    Escoge que poner: <input type="text" id="input_6b_2"><br>
+    <input type="button" value="Cambiar value" onclick="CambiarValor_6b()">
+
+
+
+    <h1>Exercici 7</h1>
+    <table id="Taula_7" border="1">
+    </table><br>
+    <input type="button" value="Cambiar tamaño de la table" onclick="ponerFilasYColumnas()">
+
+
+
+
+
+    <h1>Exercici 8</h1>
+    <select id="lista_opciones">
+        <option>JavaScript</option>
+        <option>Python</option>
+        <option>C++</option>
+        <option>Java</option>
+        <option>Kotlin</option>
+      </select>
+    <input type="button" value="Eliminar opcion" onclick="eliminarOpcion()">
+
+
+
+    <h1>Exercici 9</h1>
+    <select id="lista_opciones_2">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="c++">C++</option>
+        <option value="java">Java</option>
+        <option value="kotlin">Kotlin</option>
+      </select>
+    <input type="button" value="Mostrar valores" onclick="mostrarValor()">
+
+
+
+    <h1>Exercici 10</h1>
+    Altura: <input type="text" id="altura_10"><br>
+    Radio: <input type="text" id="radio_10"><br>
+    Resultado: <p id="resultado_10"></p><br>
+    <input type="button" value="Calcular volumen cilindro" onclick="calcularVolumen()">
+
+
+
+
+    <h1>Exercici 11</h1>
+    <p><a href="#" onmouseover="resaltar()" onmouseout="tornaNormal()">Si posses el ratolí aquí sobre, algunes paraules s'han de ressaltar</a></p>
+    <p><strong>L'ITB</strong> encoratja a <strong>tots els estudiants</strong> a seguir esforçant-se per una societat
+        <strong>millor</strong> i més <strong>digitalitzada</strong>.
+    </p>
 </body>
 </html>
